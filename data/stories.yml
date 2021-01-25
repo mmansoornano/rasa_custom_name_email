@@ -1,0 +1,21 @@
+version: "2.0"
+
+stories:
+
+- story: ask name
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: name_entry
+  - action: action_name
+#  - action: utter_ask_email
+
+- story: ask email
+  steps:
+  - intent: email_entry
+  - action: action_email
+
+- story: submit form
+  steps:
+  - intent: affirm
+  - action: action_submit

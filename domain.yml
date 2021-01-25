@@ -1,0 +1,39 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- name_entry
+- email_entry
+- affirm
+entities:
+- name
+- email
+slots:
+  email:
+    type: text
+    influence_conversation: true
+  id:
+    type: text
+    influence_conversation: true
+  name:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: "What is your name"
+  utter_ask_email:
+  - text: What is your email
+  utter_goodbye:
+  - text: Bye
+  utter_name:
+  - text: Hi {name}.\n What is your email?
+  utter_email:
+  - text: Your email is {email}. Are we good?
+  utter_credentials:
+  - text: 'Your credentials are\n Name: {name}\n Email: {email}\n Sender_id: {id}'
+actions:
+- action_name
+- action_email
+- action_submit
