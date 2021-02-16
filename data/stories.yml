@@ -8,7 +8,7 @@ stories:
   - action: utter_greet
   - intent: name_entry
   - action: action_name
-#  - action: utter_ask_email
+  - action: utter_ask_email
 
 - story: ask email
   steps:
@@ -19,3 +19,4 @@ stories:
   steps:
   - intent: affirm
   - action: action_submit
+  - action: utter_goodbye

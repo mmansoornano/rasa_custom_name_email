@@ -4,7 +4,7 @@ def DataUpdate(Name, Email):
     mydb = mysql.connector.connect(
         host='localhost',
         user='root',
-        passwd='Myhomieno=1',
+        passwd='pass',
         database='rasa_feedback',
         auth_plugin='mysql_native_password'
     )

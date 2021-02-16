@@ -47,7 +47,8 @@ class ActionEmail(Action):
         print(tracker.latest_message['entities'])
         email=tracker.get_slot('email')
         dispatcher.utter_message(template="utter_email",
-                                 email=email)
+                                 email=email
+                                 ,name=tracker.get_slot('name'))
 
         return [SlotSet("email", email)]
 

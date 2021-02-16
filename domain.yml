@@ -22,17 +22,17 @@ slots:
     influence_conversation: true
 responses:
   utter_greet:
-  - text: "What is your name"
+  - text: Hi, What is your name?
   utter_ask_email:
-  - text: What is your email
+  - text: What is your email?
   utter_goodbye:
-  - text: Bye
+  - text: Bye, Have a nice day!
   utter_name:
-  - text: Hi {name}.\n What is your email?
+  - text: Hi {name}.
   utter_email:
-  - text: Your email is {email}. Are we good?
+  - text: Your name is {name} and email is {email}. Is that correct?
   utter_credentials:
-  - text: 'Your credentials are\n Name: {name}\n Email: {email}\n Sender_id: {id}'
+  - text: "Your credentials are\n  Name: {name}\n  Email: {email}"
 actions:
 - action_name
 - action_email
